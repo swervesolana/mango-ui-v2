@@ -34,7 +34,7 @@ const useMangoStats = () => {
     const getLatestStats = async () => {
       const client = new MangoClient()
       const connection = new Connection(
-        'https://mango.rpcpool.com/',
+        'https://api.mainnet-beta.solana.com',
         'singleGossip'
       )
       const assets = IDS[cluster].mango_groups?.[DEFAULT_MANGO_GROUP]?.symbols
